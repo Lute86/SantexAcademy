@@ -1,56 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
-        <div id="header-left">
-            <img src="logo.svg">
-        </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
-        </div>
+    <!--estilos-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <div
+      id="header"
+      style="
+        border-bottom: 1px solid gray;
+        display: flex;
+        padding: 10px 100px;
+        justify-content: space-between;
+      "
+    >
+      <div id="header-left">
+        <img src="logo.svg" alt="logo"/>
+      </div>
+      <div id="header-right" style="display: flex; align-items: center">
+        <p>Nosotros</p>
+        <p>Programas</p>
+        <p>Capaciontaciones</p>
+        <p>Alianzas</p>
+        <p>Contacto</p>
+        <button class="redondo">Sumate +</button>
+        <i class="fab fa-instagram nav-i"></i>
+        <i class="fab fa-linkedin-in nav-i"></i>
+      </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
-        </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
-        </div>
+
+    <!-- Intro -->
+    <div id="introduction" style="padding: 48px">
+      <div id="introduction-text">
+        <h1>
+          Somos una Fundación dedicada a mejorar la calidad de vida de las
+          personas y su entorno, a través de la tecnología.
+        </h1>
+      </div>
+      <div id="introduction-actions" style="margin-top: 25px;margin-bottom: 50px;">
+        <button class="redondo">Contactanos -></button>
+        <button class="redondo btn-color" style="margin-left: 14px">
+          Sumate +
+        </button>
+      </div>
     </div>
-</body>
+
+    <!--Seccion impacto-->
+    <section class="section-impacto">
+      <div class="container">
+        <div class="column-impacto impacto-texto">
+          <div class="header">.Impacto</div>
+          <div class="text">
+            Buscamos construir alianzas y fortalecer vínculos para generar una
+            transformación real en la comunidad. Trabajamos para acercar la
+            tecnología innovadora y disruptiva del sector privado hacia el
+            sector social.
+          </div>
+        </div>
+        <div class="column-impacto impacto-numbers">
+          <div class="num-cap">
+            <p class="number">58</p>
+            <p class="caption">Localidades</p>
+          </div>
+          <div class="num-cap">
+            <p class="number"><span>+</span>50</p>
+            <p class="caption">Mentores</p>
+          </div>
+          <div class="num-cap">
+            <p class="number">301</p>
+            <p class="caption">Participantes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto -->
+    <section class="section-img"></section>
+
+    <!-- Programas -->
+    <section class="container-prog">
+      <h2 class="header titulo">.Programas</h2>
+      <div class="articulo">
+        <div class="columna">
+          <img
+            class="img-md img-l"
+            src="./xacademy-01-600x400.jpg"
+            alt="imagen 1"
+          />
+        </div>
+        <div class="columna col-text">
+          <img class="logo-titulo" src="./xacademy.svg" alt="logo xacademy" />
+          <p>
+            xAcademy es un programa de formación en tecnología llevado adelante
+            por la Fundación Tecnología con Propósito junto a Santex que busca
+            promover un cambio positivo en la comunidad a través de la educación
+            en IT, apuntando a lograr la inserción laboral de personas en el
+            mundo tecnológico.
+          </p>
+          <button class="redondo">Mas info</button>
+        </div>
+      </div>
+
+      <div class="articulo">
+        <div class="columna col-text">
+          <h3>Robótica educativa: la tecnología del futuro</h3>
+          <p>
+            Durante el curso, los alumnos y alumnas a través de la robótica
+            desarrollan la curiosidad, el autodidactismo y las habilidades
+            blandas necesarias para afrontar la revolución tecnológica del siglo
+            XXI.
+          </p>
+          <button class="redondo">Mas info</button>
+        </div>
+        <div class="columna">
+          <img
+            class="img-md img-r"
+            src="./robotica-educativa-07-600x400.jpg"
+            alt="imagen 1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Capacitaciones -->
+    <section class="container-prog">
+      <h2 class="header titulo">.Capacitaciones</h2>
+      <div class="articulo">
+        <div class="columna">
+          <img
+            class="img-md img-l"
+            src="./estafas-virtuales-04-600x453.jpg"
+            alt="imagen 1"
+          />
+        </div>
+        <div class="columna col-text">
+          <h3>Estafas virtuales: ¿cómo protegernos?</h3>
+          <p>
+            Los canales de comunicación a través de medios digitales cobraron
+            gran protagonismo a partir de la pandemia. Al mismo tiempo, se
+            perfeccionan cada vez más rápido las modalidades de estafas y
+            fraudes virtuales. En esta capacitación vas a aprender diferentes
+            tips y consejos útiles para navegar de manera más segura.
+          </p>
+          <button class="redondo">Mas info</button>
+        </div>
+      </div>
+
+      <div class="articulo">
+        <div class="columna col-text">
+          <h3>Seguridad informática para infancias</h3>
+          <p>
+            ¿Navegamos seguros en internet? La propuesta es una charla para
+            niños y niñas donde se brindan herramientas de seguridad y
+            autocuidado digital.
+          </p>
+          <button class="redondo">Mas info</button>
+        </div>
+        <div class="columna">
+          <img
+            class="img-md img-r"
+            src="./seguridad-informatica-para-infancias-600x398.jpg"
+            alt="imagen 1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="container-e">
+        <h2 class="header titulo">.Equipo</h2>
+        <div class="container-equipo">
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                    <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                    />
+                    <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+            <!--integrante-->
+            <div class="columna-equipo">
+                <div class="content-equipo">
+                <img
+                    class="equipo-img"
+                    src="./estafas-virtuales-04-600x453.jpg"
+                    alt="Imagen"
+                />
+                <div class="equipo-detalles">
+                    <h3>Nombre</h3>
+                    <p>Posición</p>
+                    <a class='equipo-a' href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- Alianzas -->
+    <section class="container-alianza">
+        <h2 class="header titulo">.Alianzas</h2>          
+        <div>
+            <p>hola</p>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="container-footer">
+        <div class="columnas-footer">
+            <div class="columna-footer">
+                <img src="logo-white.svg" alt="logo"/>
+            </div>
+            <div class="columna-footer">
+                <p class="titulos-footer">Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+            </div>
+            <div class="columna-footer">
+                <a class="titulos-footer titulos-a" href="#">NOSOTROS</a>
+                <a class="titulos-footer titulos-a" href="#">CONTACTO</a>
+            </div>
+            <div class="columna-footer">
+                <a class="titulos-footer titulos-a" href="#">PROGRAMAS</a>
+                <a class="titulos-footer titulos-a" href="#">CAPACITACIONES</a>
+            </div>
+            <div class="columna-footer">
+                <div>
+                    <a class="titulos-footer titulos-a" href="#">
+                        <i class="fab fa-instagram footer-iconos"></i>
+                        INSTAGRAM
+                    </a>
+                </div>
+                <div>
+                    <a class="titulos-footer footer-iconos titulos-a" href="#">
+                        <i class="fab fa-linkedin-in"></i>  
+                        LINKEDIN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  </body>
 </html>
