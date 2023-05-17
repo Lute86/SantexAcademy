@@ -8,7 +8,7 @@ body{
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(235, 233, 233);
 }
 p {
   font-weight: bold;
@@ -304,12 +304,11 @@ Seccion equipo
 ---------------------------
 */
 .container-e{
-  
-  background-color: rgb(235, 233, 233);
+  max-width: 1400px;
+  margin: 50px;
 }
 
 .container-equipo{
-  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
